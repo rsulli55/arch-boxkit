@@ -1,15 +1,16 @@
-FROM quay.io/toolbx-images/alpine-toolbox:edge
+FROM quay.io/toolbx-images/archlinux-toolbox:latest
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
-      summary="A cloud-native terminal experience" \
-      maintainer="jorge.castro@gmail.com"
+      summary="A custom arch terminal" \
+      maintainer="rsulli55"
 
-COPY extra-packages /
-RUN apk update && \
-    apk upgrade && \
-    grep -v '^#' /extra-packages | xargs apk add
-RUN rm /extra-packages
+COPY shell-packages /
+COPY dev-packages /
+RUN pacman -Syu --needed --noconfirm - < shell-packages
+RUN pacman -Syu --needed --noconfirm - < dev-packages
+RUN rm /shell-packages
+RUN rm /dev-packages
 
 RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \

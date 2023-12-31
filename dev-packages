@@ -1,0 +1,11 @@
+bpython
+clang
+cmake
+gcc
+make
+meson
+npm
+python-pip
+python-pipx
+rustup
+zig
