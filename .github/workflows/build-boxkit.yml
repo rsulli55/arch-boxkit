@@ -10,6 +10,9 @@ on:
       - main
     paths-ignore:
       - '**/README.md'
+  workflow_dispatch: 
+    branches:
+      - main
 env:
     IMAGE_NAME: arch-boxkit
     IMAGE_TAGS: latest
