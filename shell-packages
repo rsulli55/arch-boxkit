@@ -11,6 +11,7 @@ fzf
 github-cli
 just
 neovim
+qpdf
 ripgrep
 starship
 wl-clipboard
