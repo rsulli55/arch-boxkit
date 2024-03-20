@@ -9,6 +9,7 @@ COPY shell-packages /
 COPY dev-packages /
 RUN pacman -Syu --needed --noconfirm - < shell-packages
 RUN pacman -Syu --needed --noconfirm - < dev-packages
+ENV BOOTSTRAP_HASKELL_NONINTERACTIVE=1
 RUN curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 RUN rm /shell-packages
 RUN rm /dev-packages
