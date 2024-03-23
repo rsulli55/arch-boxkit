@@ -5,12 +5,9 @@ LABEL com.github.containers.toolbox="true" \
       summary="A custom arch terminal" \
       maintainer="rsulli55"
 
-COPY shell-packages /
-COPY dev-packages /
-RUN pacman -Syu --needed --noconfirm - < shell-packages
-RUN pacman -Syu --needed --noconfirm - < dev-packages
-RUN rm /shell-packages
-RUN rm /dev-packages
+COPY packages /
+RUN pacman -Syu --needed --noconfirm - < packages
+RUN rm /packages
 
 # RUN   ln -fs /bin/sh /usr/bin/sh && \
 #       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
