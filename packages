@@ -23,6 +23,7 @@ ncurses
 neofetch
 neovim
 npm
+opam
 plocate
 python-pip
 python-pipx
