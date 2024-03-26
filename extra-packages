@@ -22,6 +22,7 @@ ncdu
 ncurses
 neofetch
 neovim
+nmap
 npm
 opam
 plocate
@@ -34,7 +35,6 @@ speedtest-cli
 starship
 texlive-latexrecommended
 texlive-mathscience
-vimdiff
 wl-clipboard
 xclip
 zellij
