@@ -28,6 +28,7 @@ opam
 python-pip
 python-pipx
 qpdf
+ranger
 ripgrep
 rustup
 speedtest-cli

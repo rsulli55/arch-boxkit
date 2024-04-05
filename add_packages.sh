@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo "${@}" >> packages
-echo "Update packages"
-cat packages | sort -u | tee packages
+echo "${@}" >> extra-packages
+echo "Updated packages"
+cat extra-packages | sort -u | tee extra-packages
