@@ -16,6 +16,8 @@ fzf
 gcc
 github-cli
 helix
+imagemagick
+jq
 just
 lazygit
 make
