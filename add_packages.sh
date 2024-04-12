@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
-echo "${@}" >> extra-packages
-echo "Updated packages"
-cat extra-packages | sort -u | tee extra-packages
+for var in "${@}" 
+do
+  echo Adding package "$var"
+  echo "$var" >> extra-packages
+done
+cat extra-packages | sort -u | tee extra-packages > /dev/null

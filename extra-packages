@@ -8,6 +8,7 @@ clang
 cmake
 cosign
 direnv
+emacs
 eza
 fd
 ffmpeg
@@ -16,6 +17,7 @@ gcc
 github-cli
 helix
 just
+lazygit
 make
 meson
 ncdu
