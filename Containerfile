@@ -1,4 +1,5 @@
-FROM quay.io/toolbx-images/archlinux-toolbox:latest
+# FROM quay.io/toolbx-images/archlinux-toolbox:latest
+FROM ghcr.io/ublue-os/arch-distrobox:latest
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
