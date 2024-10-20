@@ -38,8 +38,10 @@ ripgrep
 rustup
 speedtest-cli
 starship
+termshark
 texlive-latexrecommended
 texlive-mathscience
+wireshark-qt
 wl-clipboard
 xclip
 yt-dlp
