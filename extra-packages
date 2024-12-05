@@ -33,6 +33,7 @@ nmap
 npm
 opam
 p7zip
+pass
 python-pip
 python-pipx
 qpdf
