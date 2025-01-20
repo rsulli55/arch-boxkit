@@ -20,6 +20,7 @@ gcc
 github-cli
 helix
 imagemagick
+jdk-openjdk
 jq
 just
 lazygit
