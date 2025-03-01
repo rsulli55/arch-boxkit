@@ -1,8 +1,6 @@
 atuin
 bat
 bat-extras
-bettercap
-bettercap-caplets
 bpython
 btop
 chezmoi
@@ -20,7 +18,6 @@ gcc
 github-cli
 helix
 imagemagick
-jdk-openjdk
 jq
 just
 lazygit
@@ -45,8 +42,6 @@ rustup
 speedtest-cli
 starship
 termshark
-texlive-latexrecommended
-texlive-mathscience
 wireshark-qt
 wl-clipboard
 xclip
